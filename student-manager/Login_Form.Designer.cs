@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,21 +49,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 302);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 24);
-            this.textBox1.TabIndex = 1;
+            this.txtUsuario.Location = new System.Drawing.Point(154, 302);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(192, 24);
+            this.txtUsuario.TabIndex = 1;
             // 
-            // textBox2
+            // txtSenha
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 368);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(192, 24);
-            this.textBox2.TabIndex = 2;
+            this.txtSenha.Location = new System.Drawing.Point(154, 368);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(192, 24);
+            this.txtSenha.TabIndex = 2;
             // 
             // btnCancelar
             // 
@@ -139,8 +139,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -160,8 +160,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
