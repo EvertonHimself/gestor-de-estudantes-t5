@@ -47,11 +47,15 @@ namespace student_manager
 
             if (tabela.Rows.Count > 0)
             {
-                MessageBox.Show("YES");
+                //MessageBox.Show("YES");
+                this.DialogResult = DialogResult.OK;
             }
             else 
             {
-                MessageBox.Show("NO");
+                MessageBox.Show("Usuário ou senha inválidos", 
+                    "Erro de Login", 
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Error);
             }
         }
     }
