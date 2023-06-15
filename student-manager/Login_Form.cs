@@ -58,5 +58,10 @@ namespace student_manager
                     MessageBoxIcon.Error);
             }
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
