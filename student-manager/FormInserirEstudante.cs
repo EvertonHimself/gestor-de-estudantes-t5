@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace student_manager
 {
-    public partial class FormPrincipal : Form
+    public partial class FormInserirEstudante : Form
     {
-        public FormPrincipal()
+        public FormInserirEstudante()
         {
             InitializeComponent();
-        }
-
-        private void cadastrarEstudanteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormInserirEstudante inserirEstudante = new FormInserirEstudante();
-            inserirEstudante.Show(this);
         }
     }
 }
