@@ -38,8 +38,8 @@
             this.dateTimePickerNascimento = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButtonFeminino = new System.Windows.Forms.RadioButton();
             this.radioButtonMasculino = new System.Windows.Forms.RadioButton();
+            this.radioButtonFeminino = new System.Windows.Forms.RadioButton();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -143,18 +143,6 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
-            // radioButtonFeminino
-            // 
-            this.radioButtonFeminino.AutoSize = true;
-            this.radioButtonFeminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFeminino.Location = new System.Drawing.Point(37, 24);
-            this.radioButtonFeminino.Name = "radioButtonFeminino";
-            this.radioButtonFeminino.Size = new System.Drawing.Size(88, 20);
-            this.radioButtonFeminino.TabIndex = 0;
-            this.radioButtonFeminino.TabStop = true;
-            this.radioButtonFeminino.Text = "Feminino";
-            this.radioButtonFeminino.UseVisualStyleBackColor = true;
-            // 
             // radioButtonMasculino
             // 
             this.radioButtonMasculino.AutoSize = true;
@@ -166,6 +154,18 @@
             this.radioButtonMasculino.TabStop = true;
             this.radioButtonMasculino.Text = "Masculino";
             this.radioButtonMasculino.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonFeminino
+            // 
+            this.radioButtonFeminino.AutoSize = true;
+            this.radioButtonFeminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonFeminino.Location = new System.Drawing.Point(37, 24);
+            this.radioButtonFeminino.Name = "radioButtonFeminino";
+            this.radioButtonFeminino.Size = new System.Drawing.Size(88, 20);
+            this.radioButtonFeminino.TabIndex = 0;
+            this.radioButtonFeminino.TabStop = true;
+            this.radioButtonFeminino.Text = "Feminino";
+            this.radioButtonFeminino.UseVisualStyleBackColor = true;
             // 
             // textBoxEndereco
             // 
@@ -213,6 +213,7 @@
             this.buttonEnviarFoto.TabIndex = 14;
             this.buttonEnviarFoto.Text = "Enviar Foto";
             this.buttonEnviarFoto.UseVisualStyleBackColor = true;
+            this.buttonEnviarFoto.Click += new System.EventHandler(this.buttonEnviarFoto_Click);
             // 
             // buttonCancelar
             // 
