@@ -33,5 +33,15 @@ namespace student_manager
             colunaDeImagens.ImageLayout = DataGridViewImageCellLayout.Stretch;
             dataGridViewLista.AllowUserToAddRows = false;
         }
+
+        private void buttonAtualizar_Click(object sender, EventArgs e)
+        {
+            // Atualiza a tabela de estudantes.
+        }
+
+        private void dataGridViewLista_DoubleClick(object sender, EventArgs e)
+        {
+            // Abre o estudante selecionado em uma nova janela.
+        }
     }
 }
