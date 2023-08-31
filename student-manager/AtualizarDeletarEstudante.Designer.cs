@@ -47,7 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.buttonProcurar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).BeginInit();
@@ -241,13 +241,13 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Nome";
             // 
-            // textBox1
+            // textBoxID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(156, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 29);
-            this.textBox1.TabIndex = 35;
+            this.textBoxID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxID.Location = new System.Drawing.Point(156, 12);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(213, 29);
+            this.textBoxID.TabIndex = 35;
             // 
             // label8
             // 
@@ -275,7 +275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1021, 558);
             this.Controls.Add(this.buttonProcurar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonDeletar);
@@ -309,24 +309,24 @@
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonDeletar;
         private System.Windows.Forms.Button buttonEnviarFoto;
-        private System.Windows.Forms.PictureBox pictureBoxFoto;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButtonMasculino;
-        private System.Windows.Forms.RadioButton radioButtonFeminino;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePickerNascimento;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxSobrenome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button buttonProcurar;
+        internal System.Windows.Forms.TextBox textBoxEndereco;
+        internal System.Windows.Forms.RadioButton radioButtonMasculino;
+        internal System.Windows.Forms.RadioButton radioButtonFeminino;
+        internal System.Windows.Forms.DateTimePicker dateTimePickerNascimento;
+        internal System.Windows.Forms.TextBox textBoxTelefone;
+        internal System.Windows.Forms.TextBox textBoxSobrenome;
+        internal System.Windows.Forms.TextBox textBoxNome;
+        internal System.Windows.Forms.TextBox textBoxID;
+        internal System.Windows.Forms.PictureBox pictureBoxFoto;
     }
 }

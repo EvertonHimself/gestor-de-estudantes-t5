@@ -290,9 +290,9 @@
         private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBoxFoto;
         private System.Windows.Forms.Button buttonEnviarFoto;
         private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Button buttonCadastrar;
+        internal System.Windows.Forms.PictureBox pictureBoxFoto;
     }
 }
