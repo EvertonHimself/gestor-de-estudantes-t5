@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -130,7 +131,7 @@ namespace student_manager
                 {
                     MessageBox.Show("Estudante Removido", "Remover Estudante",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    textBoxID.Text = "";
+                    //textBoxID.Text = "";
                     textBoxNome.Text = "";
                     textBoxSobrenome.Text = "";
                     textBoxTelefone.Text = "";
@@ -143,6 +144,25 @@ namespace student_manager
                     MessageBox.Show("Estudante Não Removido", "Remover Estudante",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+        }
+
+        private void buttonProcurar_Click(object sender, EventArgs e)
+        {
+            // Procura estudantes pela ID.
+            int id = Convert.ToInt32(textBoxID.Text);
+            MySqlCommand comando = new MySqlCommand("SELECT `id`, `nome`, `sobrenome`, `nascimento`, `genero`, `telefone`, `endereco`, `foto` FROM `estudantes` WHERE `id`=" + id);
+
+            // Retorna uma tabela com os dados encontrados pelo comando acima.
+            DataTable tabela = estudante.pegarEstudantes(comando);
+
+            if (tabela.Rows.Count > 0)
+            {
+                textBoxNome.Text = tabela.Rows[0]["nome"].ToString();
+                textBoxSobrenome.Text = tabela.Rows[0]["sobrenome"].ToString();
+                textBoxTelefone.Text = tabela.Rows[0]["telefone"].ToString();
+                textBoxEndereco.Text = tabela.Rows[0]["endereco"].ToString();
+                dateTimePickerNascimento.Value = (DateTime)tabela.Rows[0]["nascimento"];
             }
         }
     }

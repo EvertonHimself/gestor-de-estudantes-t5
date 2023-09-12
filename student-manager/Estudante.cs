@@ -73,7 +73,7 @@ namespace student_manager
 
         public bool deletarEstudante(int id)
         { 
-            MySqlCommand comando = new MySqlCommand("DELETE FROM `estudantes` WHERE `id`=@id", 
+            MySqlCommand comando = new MySqlCommand("DELETE FROM `estudantes` WHERE `id`=" + id, 
                 meuBancoDeDados.getConexao);
 
             meuBancoDeDados.abrirConexao();
