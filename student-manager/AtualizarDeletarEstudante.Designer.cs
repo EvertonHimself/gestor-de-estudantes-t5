@@ -63,6 +63,7 @@
             this.buttonEditar.TabIndex = 33;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonDeletar
             // 
@@ -73,6 +74,7 @@
             this.buttonDeletar.TabIndex = 32;
             this.buttonDeletar.Text = "Deletar";
             this.buttonDeletar.UseVisualStyleBackColor = true;
+            this.buttonDeletar.Click += new System.EventHandler(this.buttonDeletar_Click);
             // 
             // buttonEnviarFoto
             // 
@@ -295,7 +297,8 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label1);
             this.Name = "AtualizarDeletarEstudante";
-            this.Text = "AtualizarDeletarEstudante";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SGA - Atualizar e Deletar Estudantes";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -264,7 +264,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormInserirEstudante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormInserirEstudante";
+            this.Text = "SGA - Inserir Estudante";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
