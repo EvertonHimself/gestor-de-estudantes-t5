@@ -38,6 +38,14 @@ namespace student_manager
         private void buttonAtualizar_Click(object sender, EventArgs e)
         {
             // Atualiza a tabela de estudantes.
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM `estudantes`");
+            dataGridViewLista.ReadOnly = true;
+            DataGridViewImageColumn colunaDeImagens = new DataGridViewImageColumn();
+            dataGridViewLista.RowTemplate.Height = 80;
+            dataGridViewLista.DataSource = estudante.pegarEstudantes(comando);
+            colunaDeImagens = (DataGridViewImageColumn)dataGridViewLista.Columns[7];
+            colunaDeImagens.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            dataGridViewLista.AllowUserToAddRows = false;
         }
 
         private void dataGridViewLista_DoubleClick(object sender, EventArgs e)
